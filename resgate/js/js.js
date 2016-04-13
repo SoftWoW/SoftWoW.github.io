@@ -78,7 +78,7 @@ function start() {
 		esquerda = parseInt($("#fundoGame").css("background-position"));
 		$("#fundoGame").css("background-position", esquerda-1);
 	}
-	/*function movejogador(){
+	function movejogador(){
 		if (jogo.pressionou[TECLA.W]) {
 			var topo = parseInt($("#jogador").css("top"));
 			$("#jogador").css("top", topo-10);
@@ -97,7 +97,7 @@ function start() {
 			//Chama funcao Disparo
 			disparo();
 		}
-	}*/
+	}
 	function moveinimigo1() {
 		posicaoX = parseInt($("#inimigo1").css("left"));
 		$("#inimigo1").css("left", posicaoX-velocidade);
