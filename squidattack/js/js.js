@@ -38,17 +38,17 @@ function start() {
 	var somPerdido=document.getElementById("somPerdido");
 	var somResgate=document.getElementById("somResgate");
 var element = document.getElementById("container");
-	element.onmousemove = function(e) {
+	/*element.onmousemove = function(e) {
 		if (!ctrl){
     	var xCoor = e.clientX;
     	var yCoor = e.clientY;
     	$("#jogador").css("top", yCoor - $('#container').offset().top);
     	$("#jogador").css("left", xCoor - $('#container').offset().left);
 	}
-	}
+	}*/
 	
 
-	function cursor(val){
+	/*function cursor(val){
 		if(!val)
 		{
 			$('#body').css('cursor', 'none');
@@ -56,7 +56,7 @@ var element = document.getElementById("container");
 			$('#body').css('cursor', '');
 		}
 		
-	}
+	}*/
 
 	//Musica em loop
 	musica.addEventListener("ended", function() { musica.currentTime = 0; musica.play();}, false);
