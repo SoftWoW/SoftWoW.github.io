@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UNDER WATHER MAYHEM</title>
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body">
+	<div id="container">
+		<div id="fundoGame">
+			<div id="inicio"><h1> SQUID ATTACK </h1>
+				<p>Usando o teclado</p>
+				<p>Utilize as teclas W, A, S e D para mover a sua mira pela tela e a Barra de espaco para disparar.</p>
+				<p>Usando o mouse</p>
+				<p>Utilize o mouse para guiar a mira e o botao esquerdo para disparar</p>
+				<p>Nao deixe os inimigos atravesarem a tela.</p>
+				<label>Controle: </label>
+
+				<select id="seletor_ctrl" onchange="trocouControle()">
+					<option value="true">Teclado</option>
+					<option value="false" selected="true">Mouse</option>
+				</select>
+
+				<p onclick="start()">Clique aqui para iniciar!! </p>
+			</div>
+		</div>
+	</div>
+	<audio src="sons/torpedo.mp3" preload="auto" id="somDisparo"></audio>
+	<audio src="sons/explosao.mp3" preload="auto" id="somExplosao"></audio>
+	<audio src="sons/musica_fundo.mp3" preload="auto" id="musica"></audio>
+	<audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>
+	<audio src="sons/perdido.mp3" preload="auto" id="somPerdido"></audio>
+	<audio src="sons/perdido.mp3" preload="auto" id="somResgate"></audio>
+</body>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jquery-collision.min.js"></script>
+</html>

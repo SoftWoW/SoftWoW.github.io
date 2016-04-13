@@ -1,0 +1,399 @@
+@font-face {
+	font-family: Titulo;
+	src:url(../fontes/ANODETONOONE.TTF);
+}
+h1 {
+	font-family: Titulo;
+	font-size: 40px;
+	color:#696969;
+}
+body {
+	background-image: url(../imgs2/fundo.png);
+}
+
+#body{
+
+}
+
+#container {
+	width: 950px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#fundoGame {
+	width: 950px;
+	height: 630px;
+	background-image: url(../imgs2/deepsea.jpg);
+	border-color: #fff;
+	border-style: solid;
+}
+/*#amigo {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 8px;
+	top: 179px;
+	background-image: url(../imgs/apache.png);
+}*/
+#inimigo1 {
+	width: 123px;
+	height: 70px;
+	position: absolute;
+	left: 789px;
+	top: 253px;
+	background-image: url(../imgs2/Squid.png);
+}
+#inimigo0 {
+	width: 123px;
+	height: 70px;
+	position: absolute;
+	left: 789px;
+	top: 253px;
+	background-image: url(../imgs2/Squid.png);
+}
+/*#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(../imgs/inimigo2.png);
+}*/
+#jogador {
+	width: 43px;
+	height: 44px;
+	position: absolute;
+	left: 450px;
+	top: 264px;
+	background-image: url(../imgs2/target.png);
+}
+
+#inicio {
+	width: 350px;
+	height: 350px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 10px;
+}
+/*.anima3 {
+	width: 256px;
+	height: 66px;
+	background-image: url(../imgs/helicoptero.png);
+	animation: play .5s steps(2) infinite;
+	-webkit-animation: play .5s steps(2) infinite;
+	-moz-animation: play .5s steps(2) infinite;
+	-ms-animation: play .5s steps(2) infinite;
+	-o-animation: play .5s steps(2) infinite;
+}*/
+.anima2 {
+	width: 123px;
+	height: 70px;
+	background-image: url(../imgs2/Squid.png);
+	animation: squid 0.9s steps(15) infinite;
+	-webkit-animation: squid 0.9s steps(15) infinite;
+	-moz-animation: squid 0.9s steps(15) infinite;
+	-ms-animation: squid 0.9s steps(15) infinite;
+	-o-animation: squid 0.9s steps(15) infinite;
+}
+@keyframes squid {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-webkit-keyframes squid {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-moz-keyframes squid {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-ms-keyframes squid {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-o-keyframes squid {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+.anima0 {
+	width: 123px;
+	height: 70px;
+	background-image: url(../imgs2/Squid.png);
+	animation: squids 0.9s steps(15) infinite;
+	-webkit-animation: squids 0.9s steps(15) infinite;
+	-moz-animation: squids 0.9s steps(15) infinite;
+	-ms-animation: squids 0.9s steps(15) infinite;
+	-o-animation: squids 0.9s steps(15) infinite;
+}
+@keyframes squids {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-webkit-keyframes squids {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-moz-keyframes squids {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-ms-keyframes squids {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+@-o-keyframes squids {
+	from {background-position: 0px;}
+	to {background-position: -1833px;}
+}
+.anima1 {
+	width: 43px;
+	height: 44px;
+	background-image: url(../imgs2/target.png);
+}
+@keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -576px;}
+}
+@-webkit-keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -576px;}
+}
+@-moz-keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -576px;}
+}
+@-ms-keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -576px;}
+}
+@-o-keyframes play2 {
+	from {background-position: 0px;}
+	to {background-position: -576px;}
+}
+.anima5 {
+	width: 64px;
+	height: 65px;
+	position: absolute;
+	background-image: url(../imgs2/explosao.png);
+	animation: kabum 0.5s steps(16) 1;
+	-webkit-animation: kabum 0.5s steps(16) 1;
+	-moz-animation: kabum 0.5s steps(16) 1;
+	-ms-animation: kabum 0.5s steps(16) 1;
+	-o-animation: kabum 0.5s steps(16) 1;
+}
+@keyframes kabum {
+	from {background-position: 0px;}
+	to {background-position: -1024px;}
+}
+@-webkit-keyframes kabum {
+	from {background-position: 0px;}
+	to {background-position: -1024px;}
+}
+@-moz-keyframes kabum {
+	from {background-position: 0px;}
+	to {background-position: -1024px;}
+}
+@-ms-keyframes kabum {
+	from {background-position: 0px;}
+	to {background-position: -1024px;}
+}
+@-o-keyframes kabum {
+	from {background-position: 0px;}
+	to {background-position: -1024px;}
+}
+#disparo {
+	width: 64px;
+	height: 65px;
+	position: absolute;
+}
+#disparo_esquerda {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs2/disparoesquerda.png);
+}
+#explosao1 {
+	width: 15px;
+	height: 87px;
+	position: absolute;
+}
+#explosao2 {
+	width: 15px;
+	height: 87px;
+	position: absolute; 
+}
+#explosao3 {
+	width: 44px;
+	height: 51px;
+	position: absolute;
+}
+/*.anima4 {
+	width: 44px;
+	height: 51px;
+	background-image: url(../imgs/amigo_explosao.png);
+	animation: play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+	-moz-animation: play3 .5s steps(7) infinite;
+	-ms-animation: play3 .5s steps(7) infinite;
+	-o-animation: play3 .5s steps(7) infinite;
+}
+@keyframes play3 {
+	from{background-position: 0px;}
+	to{background-position: -308px;}
+}
+@-webkit-keyframes play3 {
+	from{background-position: 0px;}
+	to{background-position: -308px;}
+}
+@-moz-keyframes play3 {
+	from{background-position: 0px;}
+	to{background-position: -308px;}
+}
+@-ms-keyframes play3 {
+	from{background-position: 0px;}
+	to{background-position: -308px;}
+}
+@-o-keyframes play3 {
+	from{background-position: 0px;}
+	to{background-position: -308px;}
+}*/
+/*.correr {
+	width: 50px;
+	height: 49px;
+	background-image: url(../imgs2/sonic_andar3.png);
+	animation: correndo .5s steps(8) infinite;
+	-webkit-animation: correndo .5s steps(8) infinite;
+	-moz-animation: correndo .5s steps(8) infinite;
+	-ms-animation: correndo .5s steps(8) infinite;
+	-o-animation: correndo .5s steps(8) infinite;
+}
+@keyframes correndo {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-webkit-keyframes correndo {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-moz-keyframes correndo {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-ms-keyframes correndo {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-o-keyframes correndo {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+.correr_pra_traz {
+	width: 50px;
+	height: 49px;
+	background-image: url(../imgs2/sonic_andar_back2.png);
+	animation: correndo_pra_traz .5s steps(8) infinite;
+	-webkit-animation: correndo_pra_traz .5s steps(8) infinite;
+	-moz-animation: correndo_pra_traz .5s steps(8) infinite;
+	-ms-animation: correndo_pra_traz .5s steps(8) infinite;
+	-o-animation: correndo_pra_traz .5s steps(8) infinite;
+}
+@keyframes correndo_pra_traz {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-webkit-keyframes correndo_pra_traz {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-moz-keyframes correndo_pra_traz {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-ms-keyframes correndo_pra_traz {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+@-o-keyframes correndo_pra_traz {
+	from{background-position: 0px;}
+	to{background-position: -405px;}
+}
+.pular {
+	width: 36px;
+	height: 45px;
+	background-image: url(../imgs2/sonic_pulo2.png);
+	animation: pulando .1s steps(4) infinite;
+	-webkit-animation: pulando .1s steps(4) infinite;
+	-moz-animation: pulando .1s steps(4) infinite;
+	-ms-animation: pulando .1s steps(4) infinite;
+	-o-animation: pulando .1s steps(4) infinite;
+}
+@keyframes pulando {
+	from{background-position: 0px;}
+	to{background-position: -146px;}
+}
+@-webkit-keyframes pulando {
+	from{background-position: 0px;}
+	to{background-position: -146px;}
+}
+@-moz-keyframes pulando {
+	from{background-position: 0px;}
+	to{background-position: -146px;}
+}
+@-ms-keyframes pulando {
+	from{background-position: 0px;}
+	to{background-position: -146px;}
+}
+@-o-keyframes pulando {
+	from{background-position: 0px;}
+	to{background-position: -146px;}
+}*/
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+h2 {
+	font-family: Titulo;
+	font-size: 20px;
+	color:#fff;
+}
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;
+}
+h3 {
+	font-family: Titulo;
+	font-size: 20px;
+	color: #696969;
+}
+#fim {
+	width: 350px;
+	height: 270px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 10px;
+}
+#derrota {
+	width: 350px;
+	height: 200px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+	padding: 10px;
+}

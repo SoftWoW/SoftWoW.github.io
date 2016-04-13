@@ -71,7 +71,7 @@ var element = document.getElementById("container");
 		ESPACE : 32,
 		MOUSEL : 1
 	}
-	jogo.pressionou = [];
+	/*jogo.pressionou = [];
 	//Verifica se o usuario pressionou alguma tecla
 	$(document).keydown(function(e){
 		jogo.pressionou[e.which] = true;
@@ -88,12 +88,39 @@ var element = document.getElementById("container");
 	$(document).mouseup(function(e){
 		jogo.pressionou[e.which] = false;
 	
-	});
+	});*/
+
+	$("#jogador")
+		.hammer({drag_max_touches:0})
+		.on("touch drag", function(ev) {
+			var touches = ev.gesture.touches;
+
+			ev.gesture.preventDefault();
+
+			for(var t=0, len=touches.length; t<len; t++) {
+				var target = $(touches[t].target);
+				target.css({
+					zIndex: 1337,
+					top: touches[t].pageY-50
+				});
+				//Limita movimentacao
+
+				var topo = parseInt($("#jogador").css("top"));
+
+				if (topo<=0) {
+					$("#jogador").css("top", 0);
+				}
+
+				if (topo>=410) {
+					$("#jogador").css("top", 434);
+				}
+			}
+		});
 	//Game loop
 	jogo.timer = setInterval(loop, 30);
 	function loop() {
 		movefundo();
-		movejogador();
+		//movejogador();
 		moveinimigo1();
 		moveinimigo0();
 		moveinimigo2();
