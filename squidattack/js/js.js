@@ -120,6 +120,7 @@ var element = document.getElementById("container");
 	jogo.timer = setInterval(loop, 30);
 	function loop() {
 		movefundo();
+		disparo();
 		//movejogador();
 		moveinimigo1();
 		moveinimigo0();
@@ -203,7 +204,7 @@ var element = document.getElementById("container");
     	}
     }*/
 
-	function movejogador(){
+	/*function movejogador(){
 		if (ctrl) {
 		if(jogo.pressionou[TECLA.ESPACE]){
 			//console.log('pressionou espaco');
@@ -251,7 +252,7 @@ var element = document.getElementById("container");
 			correr(false);
 		}*/
 
-		if (jogo.pressionou[TECLA.A]) {
+		/*if (jogo.pressionou[TECLA.A]) {
 			//disparo_esquerda();
 			posicaoX = parseInt($("#jogador").css("left"));
 			$("#jogador").css("left", posicaoX-20);
@@ -260,14 +261,14 @@ var element = document.getElementById("container");
 				$("#jogador").css("left", 0);
 				//correr_pra_traz(false);
 			}
-		}
+		}*/
 		/*else if (correrendo_pra_traz) {
 			correr_pra_traz(false);
 		}
 		if (jogo.pressionou[TECLA.L]) {
 			//disparo();
 		}*/
-	}
+	//}
 
 	function correr(val){
 		if (!pulando){
